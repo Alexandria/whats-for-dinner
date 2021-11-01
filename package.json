@@ -2,7 +2,6 @@
   "name": "whats-for-dinner",
   "version": "1.0.0",
   "description": "An applications that helps you plan what's for dinner",
-  "main": "index.js",
   "dependencies": {
     "next": "^12.0.1",
     "react": "^17.0.2",
