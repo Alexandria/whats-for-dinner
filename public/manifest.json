@@ -16,17 +16,13 @@
       "src": "icons/foodicon96",
       "sizes": "96x96",
       "type": "image/png"
-    }, {
-      "src": "icons/foodicon144",
-      "sizes": "144x144",
-      "type": "image/png"
-    }, {
-      "src": "icons/foodicon168",
-      "sizes": "168x168",
-      "type": "image/png"
-    }, {
+    },{
       "src": "icons/foodicon192",
       "sizes": "192x192",
+      "type": "image/png"
+    },{
+      "src": "icons/foodicon",
+      "sizes": "512x512",
       "type": "image/png"
     }]
 }
