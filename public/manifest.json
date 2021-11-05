@@ -3,7 +3,7 @@
   "shortname":"What's for dinner?",
   "start_url":"/",
   "description":"An application about planning food",
-  "display":"standalone",
+  "display":"What are we going to eat today?",
   "icons": [{
       "src": "icons/foodicon48.png",
       "sizes": "48x48",
