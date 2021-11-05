@@ -12,4 +12,4 @@ public/worker-*.js
 public/workbox-*.js.map
 
 #service  worker
-service-worker.js
+custom-service-worker.js
