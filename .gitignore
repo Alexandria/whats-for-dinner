@@ -3,3 +3,11 @@ dist
 
 # Next js 
 .next
+
+#next-pwa
+**/public/workbox-*.js
+**/public/sw.js
+**/public/worker-*.js
+
+#service  worker
+service-worker.js
