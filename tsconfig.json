@@ -22,13 +22,15 @@
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "outDir": "dist"
+    "outDir": "dist",
+    "incremental": true
   },
   "exclude": [
     "node_modules"
   ],
   "include": [
     "next-env.d.ts",
+    "service-worker.d.ts",
     "**/*.ts",
     "**/*.tsx"
   ]
