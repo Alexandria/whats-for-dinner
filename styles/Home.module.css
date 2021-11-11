@@ -11,3 +11,16 @@
   justify-content: center;
   align-items: center;
 }
+
+.contentContainer{
+  width: 60vw;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.actionContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
