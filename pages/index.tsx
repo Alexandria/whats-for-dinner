@@ -1,7 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
-import { Footer, Header } from '../components'
+import { Footer, Header, Card, ActionCard } from '../components'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -15,6 +14,14 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <Header/>
+        <div className={styles.contentContainer}>
+        <Card food={{name:"Tacos", id:45}}/>
+        <div className={styles.actionContainer}> 
+        <ActionCard action="Meal Prep" link="/mealprep/89"/>
+        <ActionCard action="New Meal" link="/newmeal"/>
+        </div>
+
+        </div>
       </main>
 
       <Footer/>

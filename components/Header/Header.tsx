@@ -3,7 +3,7 @@ import styles from './Header.module.css'
 
 const Header = () =>{
     return <div className={styles.header}>
-        <div> What is for dinner? </div>
+        <div> <h1>Wuts for dinner?</h1> </div>
     </div>
 }
 
