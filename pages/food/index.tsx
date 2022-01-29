@@ -12,9 +12,8 @@ const getAllRecipes = async (url:string) => {
 const Index = () =>{
     const {data, error} = useSWR(`/api/recipes`, getAllRecipes)
 
-    console.log("DATA ", data?.data.recipes)
     if(error || !data) return <h3>Uh oh! Error!</h3>
-    if(!data?.data) return <h3>....Loading</h3>
+    if(data.data) return <h3>....Loading</h3>
 
     return <div>
         {data.data.recipes.map((recipe:Recipe, index:number) =>{
