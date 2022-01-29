@@ -10,5 +10,8 @@ module.exports = withPWA({
     // Added below becuase https://github.com/shadowwalker/next-pwa/issues/288
     buildExcludes: [/middleware-manifest\.json$/],
     //importScripts:['/service-worker.js']
+  },
+  images:{
+    domains:['unsplash.com','www.istockphoto.com', 'img.hellofresh.com']
   }
 })

@@ -1,19 +1,16 @@
 .container{
-    min-height: 50vh;
-    min-width: 30vw;
-    padding: 100px;
-    background-color: burlywood;
-    border-color: darkgreen;
+    display: flex;
+    flex-direction: column;
     border-radius: 2%;
-    border-width: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 10px 8px 5px darkgrey;
+    margin: 10px 10px;
 }
 
 .container:hover {
-    background-color: rgb(192, 161, 120);
+    background-color:  rgb(238, 231, 231);;
 }
 
 .container:active {
@@ -24,4 +21,9 @@
 .container a div{
     text-decoration: none;
     text-decoration: unset;
+}
+
+.cardDescription{
+    display: flex;
+    flex-wrap: wrap;
 }
