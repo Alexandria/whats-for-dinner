@@ -22,6 +22,8 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 ## UI Componenets
 https://nextui.org/docs/components/avatar
 
+## Food API
+https://spoonacular.com/food-api/
 
 ## Learn More
 
