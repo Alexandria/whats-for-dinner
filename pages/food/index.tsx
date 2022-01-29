@@ -1,19 +1,19 @@
 import useSWR from 'swr'
 import axios from 'axios'
-import { Recipe } from '../../mockData'
+import { recipes } from '../../mockData'
+import {Recipe} from "../../src/types/Recipe"
 import Image from 'next/image'
 
 const getAllRecipes = async (url:string) => {
     const response = await axios.get(url)
-    console.log("response ", response) 
     return response
 }
 
 const Index = () =>{
-    const {data, error} = useSWR('/api/recipes', getAllRecipes)
+    const {data, error} = useSWR(`/api/recipes`, getAllRecipes)
 
     console.log("DATA ", data?.data.recipes)
-    if(error) return <h3>Uh oh! Error!</h3>
+    if(error || !data) return <h3>Uh oh! Error!</h3>
     if(!data?.data) return <h3>....Loading</h3>
 
     return <div>

@@ -5,12 +5,9 @@ const uri = `mongodb+srv://lex:${process.env.DB_PASSWORD}@cluster0.makg9.mongodb
 
 export const connectToMongo = async () => {
   try {
-    await mongoose.connect(uri, {
-      useUnifiedTopology: true,
-      useNewUrlParser: true,
-    });
+    await mongoose.connect(uri);
     //logger.info(chalk.inverse.cyan.bgBlack('Connected to mongodb: ' + process.env.MONGO_DB_NAME));
   } catch (err) {
-    console.log(err.message);
+    console.log(err);
   }
 };
